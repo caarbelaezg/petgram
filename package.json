@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "vercel-build": "npm run build",
     "build": "webpack",
     "dev": "webpack serve",
     "lint": "standard"
@@ -33,7 +34,9 @@
   },
   "dependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "styled-components": "^5.3.1"
   },
   "standard": {
     "ignore": [
@@ -41,6 +44,8 @@
     ]
   },
   "eslintConfig": {
-    "extends":["./node_modules/standard/eslintrc.json"]
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ]
   }
 }
