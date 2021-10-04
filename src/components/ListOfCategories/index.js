@@ -1,13 +1,13 @@
-import React, { Fragment, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Category } from '../Category'
 
 import { List, Item } from './styles'
 
-function useCategoriesData () {
+const useCategoriesData = () => {
   const [categories, setCategories] = useState([])
   const [loading, setLoading] = useState(false)
 
-  useEffect(function () {
+  useEffect(() => {
     setLoading(true)
     window.fetch('https://petgram-server-karl-n4ja1khi1-caarbelaezg.vercel.app/categories')
       .then(res => res.json())
